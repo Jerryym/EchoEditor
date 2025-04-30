@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>EchoEngine.png</file>
+    </qresource>
+</RCC>
