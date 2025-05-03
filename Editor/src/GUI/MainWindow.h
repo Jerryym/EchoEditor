@@ -19,7 +19,17 @@ namespace EchoEditor {
 		virtual const QString& GetTitle() const override { return m_sProp.m_STitle; }
 
 	private:
+		/// @brief 初始化
+		void Init();
+		/// @brief 初始化控制台Dock
+		void InitConsoleDockWidget();
+
+		/// @brief 初始化RibbonBar
+		void InitRibbonBar();
+
+	private:
 		NestUI::sWindowProp m_sProp;
+		NestUI::DockWidgetManager* m_dockManager;
 	};
 
 }

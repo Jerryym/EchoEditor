@@ -9,18 +9,20 @@ project(Editor VERSION ${EDITOR_VERSION} LANGUAGES CXX)
 set(EDITOR_HEADERS
 	# GUI
 	src/GUI/MainWindow.h
+	src/GUI/ConsoleDock.h
 )
 
 # 定义源文件列表
 set(EDITOR_SOURCES
 	# GUI
 	src/GUI/MainWindow.cpp
+	src/GUI/ConsoleDock.cpp
 
 	src/main.cpp
 )
 
 # 定义资源文件
-SET(EDITOR_RESOURCE
+set(EDITOR_RESOURCE
     res/Resource.qrc
 )
 
